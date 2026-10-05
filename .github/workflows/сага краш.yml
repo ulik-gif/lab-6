@@ -1,0 +1,13 @@
+name: CI Workflow
+
+on: [push]
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello step
+        run: echo "Hello from [Ваше Имя]"
+
+      - name: System info step
+        run: uname -a
